@@ -19,12 +19,12 @@
 \setbeamercolor{example text}{fg=PKUred} %Colour of the Example block text
 
 
-\setbeamercolor{palette primary}{bg=grey, fg=PKUred} %These are the colours of the background. Being this the main combination and so one. 
+\setbeamercolor{palette primary}{bg=grey, fg=PKUred} %These are the colours of the background. Being this the main combination and so one.
 \setbeamercolor{palette secondary}{bg=grey, fg=white}
 \setbeamercolor{palette tertiary}{bg=PKUred, fg= white}
 \setbeamercolor{section in toc}{fg=PKUred} %Color of the text in the table of contents (toc)
 
-%These next packages are the useful for Physics in general, you can add the extras here. 
+%These next packages are the useful for Physics in general, you can add the extras here.
 \usepackage{amsmath,amssymb}
 \usepackage{slashed}
 \usepackage{cite}
@@ -40,89 +40,93 @@
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{bluetemp}\xspace}}%metropolis}}\xspace}
 
+% 定义常数i、e、积分符号d
+\newcommand\mi{\mathrm{i}}
+\newcommand\me{\mathrm{e}}
+
 \title{Your amazing Title}
 \author[Name]{袁磊祺 \inst{$\dagger$} and supervisor's name} %With inst, you can change the institution they belong
 \subtitle{Subtitle}
 \institute[uni]{\inst{$\dagger$} 北京大学工学院力学与工程科学系}
 \date{\today} %Here you can change the date
-\titlegraphic{\vspace{0.5cm}\hfill\includegraphics[scale=0.23]{pkured.pdf}} %You can modify the location of the logo by changing the command \vspace{}. 
+\titlegraphic{\vspace{0.5cm}\hfill\includegraphics[scale=0.23]{pkured.pdf}} %You can modify the location of the logo by changing the command \vspace{}.
 
 \begin{document}
 {
-\setbeamercolor{background canvas}{bg=white, fg=white}
-\setbeamercolor{normal text}{fg=black}
-\maketitle
+   \setbeamercolor{background canvas}{bg=white, fg=white}
+   \setbeamercolor{normal text}{fg=black}
+   \maketitle
 }%This is the colour of the first slide. bg= background and fg=foreground
 
 \metroset{titleformat frame=smallcaps} %This changes the titles for small caps
 
 \begin{frame}{Outline}
-    \setbeamertemplate{section in toc}[sections numbered] %This is numbering the sections
-    \tableofcontents[hideallsubsections] %You can comment this line if you want to show the subsections in the table of contents
+   \setbeamertemplate{section in toc}[sections numbered] %This is numbering the sections
+   \tableofcontents[hideallsubsections] %You can comment this line if you want to show the subsections in the table of contents
 \end{frame}
 
 \begin{frame}{Objectives}
-    \underline{\textsc{Some text:}}
-    \begin{small}
-        This is some small Text.
-    \end{small}
+   \underline{\textsc{Some text:}}
+   \begin{small}
+	  This is some small Text.
+   \end{small}
 
-    \metroset{block=fill}
-    \begin{exampleblock}{\textsc{Example block}}
-        \begin{itemize}
-            \item You know how to do itemize
-            \item Also here
-        \end{itemize}
-    \end{exampleblock}
+   \metroset{block=fill}
+   \begin{exampleblock}{\textsc{Example block}}
+	  \begin{itemize}
+		 \item You know how to do itemize
+		 \item Also here
+	  \end{itemize}
+   \end{exampleblock}
 \end{frame}
 
 
 \section{Introduction}
 
 \begin{frame}[fragile]{Introduction: blah blah} %You can change fragile by standout
-    Text Text Text Text. \\You can change the size of the footnote text like  Text\footnote{\small{ here.}} Text\footnote{\large{And here.}} Text\footnote{\tiny{And here.}}
-    \begin{itemize} %The symbol of the items can be changed by which ever you want, this is just an example.
-        \item[$\diamond$] Text,
-        \item[$\diamond$] Text,
-        \item[$\diamond$] Text.
-    \end{itemize}
-    An equation without number could be represented by:
-    \begin{equation*}
-        c^{2} = a^{2} + b^{2}
-    \end{equation*}
-    That's all for this slide.
+   Text Text Text Text. \\You can change the size of the footnote text like  Text\footnote{\small{ here.}} Text\footnote{\large{And here.}} Text\footnote{\tiny{And here.}}
+   \begin{itemize} %The symbol of the items can be changed by which ever you want, this is just an example.
+	  \item[$\diamond$] Text,
+	  \item[$\diamond$] Text,
+	  \item[$\diamond$] Text.
+   \end{itemize}
+   An equation without number could be represented by:
+   \begin{equation*}
+	  c^{2} = a^{2} + b^{2}
+   \end{equation*}
+   That's all for this slide.
 \end{frame}
 
 \begin{frame}[standout]{This is other type of slide}
-    There is some text here.
-    And an equation with number:
-    \begin{equation}
-        E^{2} = m^{2} + p^{2}
-    \end{equation}
+   There is some text here.
+   And an equation with number:
+   \begin{equation}
+	  E^{2} = m^{2} + p^{2}
+   \end{equation}
 \end{frame}
 
 \include{Othersection}
 
 \section{This is another section}
 \begin{frame}{Frame Title} %You can also not write fragile or standout and you can see how it looks
-    Hello world!
+   Hello world!
 \end{frame}
 
 \section{Final section}
 
 \begin{frame}{Conclusion}
-    These are the final words, you do your best to try to wake up everyone that was listening to your talk.
+   These are the final words, you do your best to try to wake up everyone that was listening to your talk.
 \end{frame}
 
 {\setbeamercolor{palette primary}{fg=black, bg=orange!30} %You can change the colours
-\begin{frame}[standout]
-    Thank you! And thank to yourself because you did all the job.
-\end{frame}
+   \begin{frame}[standout]
+	  Thank you! And thank to yourself because you did all the job.
+   \end{frame}
 }
 \appendix
 
 \begin{frame}{Back up}
-    These slides won't appear in the table of contents and will not be counted as the total slides.
+   These slides won't appear in the table of contents and will not be counted as the total slides.
 \end{frame}
 
 \end{document}
